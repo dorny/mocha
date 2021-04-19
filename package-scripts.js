@@ -154,7 +154,7 @@ module.exports = {
           hiddenFromHelp: true
         },
         reporters: {
-          script: test('reporters', '--timeout 500 "test/reporters/*.spec.js"'),
+          script: test('reporters', '--timeout 500 "test/reporters/*.spec.js" --reporter=json --reporter-option output=test-results.json'),
           description: 'Run Node.js reporter tests',
           hiddenFromHelp: true
         },
